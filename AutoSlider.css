@@ -1,0 +1,29 @@
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+  height: 550px;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+  .slider-container {
+    height: 300px; /* Adjust height for smaller screens */
+  }
+
+  .slider img {
+    object-fit: cover;
+  }
+}
